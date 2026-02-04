@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>AquaCheck | Muestras</title>
+    <link rel="stylesheet" href="admin7.css">
+</head>
+<body>
+
+<div class="app">
+
+    
+    <!-- SIDEBAR -->
+    <aside class="sidebar slide-in-left">
+        <div class="logo">
+            <img src="imagenes/logo.png" class="logo-img">
+            <div class="aqua">
+                <h3>AQUA CHECK</h3>
+                <h4>Administrador</h4>
+            </div>
+        </div>
+
+        <nav>
+            <button>🏠 Panel</button>
+            <button>👥 Usuarios</button>
+            <button>🧪 Químicos</button>
+            <button class="active">📄 Muestras</button>
+            <button>🔔 Notificaciones</button>
+
+            <button>👤 Mi perfil</button>
+            <button>⚙️ Configuración</button>
+            <button class="logout">🚪 Cerrar sesión</button>
+        </nav>
+    </aside>
+
+    <!-- CONTENIDO -->
+    <main class="content">
+
+        <!-- HEADER -->
+        <section class="header">
+            <div>
+                <h2>Muestras de agua</h2>
+                <p>Monitorea la calidad del agua en tiempo real</p>
+            </div>
+            <input type="text" placeholder="🔍 Buscar muestras, ubicaciones">
+        </section>
+
+        <!-- CARD FILTROS -->
+        <section class="filters-card">
+            <h3>Muestras de Agua</h3>
+            <p>Se detectaron niveles altos de cloro en la zona Centro.</p>
+
+            <div class="filters">
+                <div class="search-icon">🔍</div>
+
+                <select>
+                    <option>Todos los estados</option>
+                </select>
+
+                <select>
+                    <option>Todas</option>
+                </select>
+
+                <select>
+                    <option>Fecha</option>
+                </select>
+            </div>
+
+            <div class="resume">
+                <div>
+                    <strong class="green">2</strong>
+                    <span>Potables</span>
+                </div>
+                <div>
+                    <strong class="orange">3</strong>
+                    <span>Advertencia</span>
+                </div>
+                <div>
+                    <strong class="red">2</strong>
+                    <span>No Potables</span>
+                </div>
+                <div>
+                    <strong class="blue">8</strong>
+                    <span>Total</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- TABLA -->
+        <section class="table-card">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ubicación</th>
+                        <th>Fecha</th>
+                        <th>Reportero</th>
+                        <th>Estado</th>
+                        <th>pH</th>
+                        <th>Cloro (mg/L)</th>
+                        <th>Turbidez (NTU)</th>
+                        <th>Temp. (°C)</th>
+                        <th>Visibilidad</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>📍 Doctores</td>
+                        <td>05/10/2024</td>
+                        <td>Carlos López</td>
+                        <td><span class="status no">No Potable</span></td>
+                        <td>6.1</td>
+                        <td>2.1</td>
+                        <td>4.5</td>
+                        <td>26.5</td>
+                        <td>👁️</td>
+                    </tr>
+
+                    <tr>
+                        <td>📍 Doctores Norte</td>
+                        <td>05/10/2024</td>
+                        <td>Santiago López</td>
+                        <td><span class="status no">No Potable</span></td>
+                        <td>6.1</td>
+                        <td>2.1</td>
+                        <td>4.5</td>
+                        <td>26.5</td>
+                        <td>👁️</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+</div>
+
+</body>
+</html>

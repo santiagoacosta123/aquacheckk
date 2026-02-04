@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: #ffffff;
+}
+
+.app {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 260px;
+    background: #fff;
+    padding: 24px 18px;
+    box-shadow: 6px 0 20px rgba(0,0,0,0.1);
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 30px;
+    display: flex;
+}
+.aqua {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.aqua h3 {
+    color: #287dc7;
+    margin-top: 8px;
+    font-size: 24px;
+}
+
+.logo-img {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.sidebar button {
+    padding: 14px;
+    border-radius: 14px;
+    border: 1.8px solid #c7d2ff;
+    background: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sidebar button:hover {
+    background: #f3f6ff;
+    transform: translateX(6px);
+}
+
+.sidebar .active {
+    background: linear-gradient(90deg,#28c76f,#4a8cff);
+    color: white;
+    border: none;
+}
+
+/* espacio entre notificaciones y perfil */
+.sidebar nav button:nth-child(6) {
+    margin-top: 40px;
+}
+
+.logout {
+    color: #ff3b3b;
+}
+
+/* CONTENT */
+.content {
+    flex: 1;
+    padding: 40px;
+}
+
+/* HEADER */
+.perfil-header-bg {
+    background: linear-gradient(90deg,#28c76f,#4a8cff);
+    padding: 30px;
+    border-radius: 24px;
+    margin-bottom: 30px;
+    color: white;
+    
+}
+
+.search-top {
+    margin-top: 17px;
+    width: 300px;
+    padding: 10px 14px;
+    border-radius: 20px;
+    border: none;
+}
+
+/* CARD */
+.card {
+    background: #fff;
+    border-radius: 24px;
+    padding: 26px;
+    margin-bottom: 30px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    margin-top: 70
+    ;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* FILTROS */
+.filters {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.filters input,
+.filters select {
+    padding: 8px 14px;
+    border-radius: 14px;
+    border: 1px solid #ccc;
+}
+
+/* STATS MINI */
+.stats-mini {
+    display: flex;
+    gap: 25px;
+}
+
+.stats-mini div {
+    text-align: center;
+}
+
+.green { color: #28c76f; }
+.orange { color: #ff9f43; }
+.red { color: #ff3b3b; }
+.blue { color: #4a8cff; }
+
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+
+/* BADGES */
+.badge {
+    padding: 6px 14px;
+    border-radius: 14px;
+    font-size: 12px;
+}
+
+.badge.potable {
+    background: #e8fff1;
+    color: #28c76f;
+}
+
+/* BUTTON */
+.assign {
+    background: #28c76f;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 14px;
+    cursor: pointer;
+}
+
+/* ANIMACIONES */
+.fade-up { animation: fadeUp 0.8s ease; }
+.fade-down { animation: fadeDown 0.8s ease; }
+.slide-in-left { animation: slideLeft 0.8s ease; }
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeDown {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideLeft {
+    from { opacity: 0; transform: translateX(-40px); }
+    to { opacity: 1; transform: translateX(0); }
+}

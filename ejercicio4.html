@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="whidth=device-width, inicial-scale =1.0">
+    <title>Document</title>
+    </head>
+    <style>
+        *{
+            margin: 10px;
+            padding: 5px;
+        }
+        #header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .uno{
+            background-color: rgba(3, 3, 72, 0.492);
+            width: 20%;
+            height: 40px;
+            border-radius: 10px;
+        }
+        .dos{
+            background-color: rgba(3, 3, 72, 0.492);
+            width: 3%;
+            height: 20px;
+            border-radius: 10px;
+        }
+        .tres{
+            background-color: rgba(3, 3, 72, 0.492);
+            width: 10%;
+            height: 10px;
+            border-radius: 10px;
+        }
+        .ocho{
+            background-color:  rgba(3, 3, 72, 0.492);
+            width: 12%;
+            height: 40px;
+            border-radius: 10px;
+        }
+        #conten{
+            display:flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            width:100%;
+        }
+        .izquierd{
+            background-color: rgba(72, 103, 161, 0.523);
+            width: 50%;
+            height: 360px;
+            border-radius: 10px;
+        }
+        #derech{
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: flex-end;
+            justify-content: center;
+        }
+        .c-1{
+            background-color: darkgrey;
+            width: 100%;
+            height: 30px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 3px black;
+        }
+        .c-2{
+            background-color: darkgrey;
+            width: 90%;
+            height: 30px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 3px black;
+        }
+        .c-3{
+            background-color: darkgrey;
+            width: 100%;
+            height: 15px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 3px black;
+        }
+        .c-4{
+            background-color: darkgrey;
+            width: 50%;
+            height: 15px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 3px black;
+        }
+        .c-5{
+            background-color: darkgrey;
+            width: 60%;
+            height: 30px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 3px black;
+        }
+        #conten2{
+            display: flex;
+            width: 60%;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-top: 20px;
+            gap: 30px;
+        }
+        .c-6{
+            background-color: rgba(7, 86, 155, 0.671);
+            width: 70%;
+            height: 80px;
+            border-radius: 10px;
+            box-shadow: 4px 4px 3px black;
+        }
+        #conten3{
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .barra{
+            background-color: rgba(3, 3, 72, 0.492);
+            width: 30%;
+            height: 30px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 3px black;
+        }
+        #conten4{
+            display: flex;
+            margin-top:20px;
+            width: 100%;
+            justify-content: space-between;
+        }
+        .a-1{
+            background-color: rgba(7, 86, 155, 0.671);
+            width: 30%;
+            height: 100px;
+            border-radius: 10px;
+            box-shadow: 4px 4px 3px black;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            overflow-y:visible ;
+        }
+        .imagen{
+            background-color: antiquewhite;
+            width: 50%;
+            height: 100px;
+            border-radius: 10px;
+            box-shadow: 4px 4px 2px;
+        }
+        
+        .texto{
+            background-color: gray;
+            width: 20%;
+            height: 15px;
+            border-radius: 10px;
+            box-shadow: 4px 4px 2px;
+            
+        }
+        #carrusel{
+            display: flex;
+            margin-top: 20px;
+            flex-direction: column;       
+        }
+        #top{
+            display: flex;
+            width: 100%;  
+            justify-content: space-between;
+        }
+        #d{
+            display: flex;
+            width: 40%;
+            justify-content: flex-start;
+            gap: 10px;
+
+        }
+        .d-1{
+            background-color: cadetblue;
+            width: 5%;
+            height: 30px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 2px black;
+        }
+        #D{
+            display: flex;
+            width: 60%;
+            justify-content: flex-end;
+            gap: 20px;
+        }
+        .d-3{
+            background-color: rgba(95, 158, 160, 0.697);
+            width: 10%;
+            height: 20px;
+            border-radius: 10px;
+            box-shadow: 4px 4px 3px black;
+        }
+        .d-4{
+            background-color:  rgba(95, 158, 160, 0.697);
+            width: 30%;
+            height: 20px;
+            border-radius: 10px;
+            box-shadow: 4px 4px 3px black;
+        }
+        #end{
+            width: auto;
+            height: 200px;
+            margin-top: 20px;
+            display: flex;
+            overflow-y:visible;
+            justify-content: space-between;
+        }
+        .e-1{
+            background-color:rgba(3, 3, 72, 0.492);
+            width: 15%;
+            height: 150px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            padding: 10px; 
+        }
+        .e-1 .imagen{
+            background-color: darkgray;
+            width: 60%;
+            height: 100px;
+            border-radius: 10px;
+        }
+        .e-1 .texto{
+            background-color:  rgba(17, 17, 17, 0.671);
+            width: 60%;
+            height: 15px;
+            border-radius: 10px;
+        }
+
+    </style>
+    <body>
+        <div id="header">
+            <div class="uno"></div>
+            <div class="dos"></div>
+            <div class="dos"></div>
+            <div class="tres"></div>
+            <div class="tres"></div>
+            <div class="tres"></div>
+            <div class="tres"></div>
+            <div class="ocho"></div>
+        </div>
+        <div id="conten">
+            <div class="izquierd"></div>
+            <div id="derech">
+                    <div class="c-1"></div>
+                    <div class="c-2"></div>
+                    <div class="c-3"></div>
+                    <div class="c-4"></div>
+                    <div class="c-5"></div>
+            <div id="conten2">
+                <div class="c-6"></div>
+                <div class="c-6"></div>
+                <div class="c-6"></div>
+            </div>
+            </div>
+        </div>
+        <div id="conten3">
+            <div class="barra"></div>
+        </div>
+        <div id="conten4">
+            <div class="a-1">
+                <div class="imagen"></div>
+                <div class="texto"></div>
+            </div>
+            <div class="a-1">
+                <div class="imagen"></div>
+                <div class="texto"></div>
+            </div>
+            <div class="a-1">
+                <div class="imagen"></div>
+                <div class="texto"></div>
+            </div>
+        </div>
+        <div id="carrusel">
+            <div id="top">
+                <div id="d">
+                    <div class="d-1"></div>
+                    <div class="d-1"></div>
+                </div>
+                <div id="D">
+                    <div class="d-3"></div>
+                    <div class="d-3"></div>
+                    <div class="d-3"></div>
+                    <div class="d-4"></div>
+                </div>
+            </div>
+            <div id="end">
+                <div class="e-1">
+                    <div class="imagen"></div>
+                    <div class="texto"></div>
+                    <div class="texto"></div>
+                </div>
+                <div class="e-1">
+                    <div class="imagen"></div>
+                    <div class="texto"></div>
+                    <div class="texto"></div>
+                </div>
+                <div class="e-1">
+                    <div class="imagen"></div>
+                    <div class="texto"></div>
+                    <div class="texto"></div>
+                </div>
+                <div class="e-1">
+                    <div class="imagen"></div>
+                    <div class="texto"></div>
+                    <div class="texto"></div>
+                </div>
+            </div>
+
+        </div>
+        <div id="carrusel">
+            <div id="top">
+                <div id="d">
+                    <div class="d-1"></div>
+                    <div class="d-1"></div>
+                </div>
+                <div id="D">
+                <div class="d-3"></div>
+                <div class="d-3"></div>
+                <div class="d-3"></div>
+                <div class="d-4"></div>
+                </div>
+            </div>
+            <div id="end">
+                <div class="e-1">
+                    <div class="imagen"></div>
+                    <div class="texto"></div>
+                    <div class="texto"></div>
+                </div>
+                <div class="e-1">
+                    <div class="imagen"></div>
+                    <div class="texto"></div>
+                    <div class="texto"></div>
+                </div>
+                <div class="e-1">
+                    <div class="imagen"></div>
+                    <div class="texto"></div>
+                    <div class="texto"></div>
+                </div>
+                <div class="e-1">
+                    <div class="imagen"></div>
+                    <div class="texto"></div>
+                    <div class="texto"></div>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>
+
+
+
+

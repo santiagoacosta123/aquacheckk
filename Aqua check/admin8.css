@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: #ffffff;
+}
+
+.app {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 260px;
+    background: #fff;
+    padding: 24px 18px;
+    box-shadow: 6px 0 20px rgba(0,0,0,0.1);
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 30px;
+    display: flex;
+}
+.aqua {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.aqua h3 {
+    color: #287dc7;
+    margin-top: 8px;
+    font-size: 24px;
+}
+
+.logo-img {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.sidebar button {
+    padding: 14px;
+    border-radius: 14px;
+    border: 1.8px solid #c7d2ff;
+    background: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sidebar button:hover {
+    background: #f3f6ff;
+    transform: translateX(6px);
+}
+
+.sidebar .active {
+    background: linear-gradient(90deg,#28c76f,#4a8cff);
+    color: white;
+    border: none;
+}
+
+.sidebar nav button:nth-child(6) {
+    margin-top: 40px;
+}
+
+.logout {
+    color: #ff3b3b;
+}
+
+.content {
+    flex: 1;
+    padding: 40px;
+}
+
+
+.header-card{
+    border-radius:20px;
+    padding:24px;
+    margin-bottom:30px;
+    background:#fff;
+    background: linear-gradient(90deg, #28c76f, #4a8cff);
+    padding: 32px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+
+.notifications-card{
+    border-radius:22px;
+    padding:26px;
+    background:#fff;
+    box-shadow:0 10px 24px rgba(0,0,0,0.12);
+}
+
+.subtitle{
+    color:#666;
+    margin:8px 0 20px;
+}
+
+.notification{
+    display:flex;
+    gap:16px;
+    padding:14px 18px;
+    border:1.5px solid #ddd;
+    border-radius:16px;
+    margin-bottom:14px;
+    align-items:center;
+}
+
+.notification.success{
+    border-color:#28c76f;
+}
+
+.notification .text span{
+    display:block;
+    font-size:12px;
+    color:#777;
+    margin-top:4px;
+}
+
+.icon{
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    background:#000;
+}
+
+.icon.system{
+    background:#28c76f;
+}
+
+.icon.user{
+    background:#111;
+}
+
+

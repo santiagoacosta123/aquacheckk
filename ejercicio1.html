@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+	<title>Document</title>
+    <style>
+        #Header{
+            background-color: rgb(95, 3, 3);
+            width: 100%;
+            height: 200px;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        h1{
+            color: black;
+            
+        }
+        body{
+            margin: 0;
+            
+            
+        }
+        #padre{
+            display: flex;
+        }
+        #Izquierdo, #Derecho{
+            background-color: rgb(10, 104, 10);
+            width: 30%;
+            height: 510px;
+            margin: 20px 5px;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+        
+        }
+        
+        .centro{
+            display: block;
+            width: 40%;
+            margin: 0px 5px;
+
+        }
+        .Arriba, .Abajo{
+            width: 98%; 
+            height:245px ; 
+            background-color:rgb(9, 97, 115); 
+            container: flex;
+            margin: 20px 5px;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+        }
+        
+        
+        footer{
+            background-color: rgb(95, 3, 3);
+            width: 100%;
+            height: 200px;
+            margin: 0px 5px;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+
+</head>
+<body>
+    <nav id="Header" class = "Header">
+        <h1>Header</h1>
+    </nav>
+    
+    <div id = "padre">
+    
+        <div id = "Izquierdo" >
+            <h1>Nav</h1>
+        </div>
+
+        <div class = "centro">
+
+            <div class="Arriba">
+            <h1>Article</h1>
+            </div>
+        
+
+            <div class="Abajo">
+            <h1>Article</h1>
+            </div>
+
+        </div>
+
+        <div id ="Derecho">
+        <h1>Aside</h1>
+        </div>
+
+
+    </div>
+    
+    <footer>
+        <h1>Footer</h1>
+    </footer>
+</body>
+</html>

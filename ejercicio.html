@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="whidth=device-width, inicial-scale =1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 20px;
+        }
+        #header{
+            display:flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .top{
+            background-color: rgba(7, 7, 199, 0.692);
+            width: 100%;
+            height: 40px;
+            border-radius: 20px;
+            box-shadow: 3px 3px 2px black;
+        }
+        .medium{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;  
+            
+        }
+        #uno{
+            background-color: rgb(127, 197, 255);
+            width: 15%;
+            height: 40px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 2px black;
+        }
+        #dos{
+            background-color: rgb(127, 197, 255);
+            width: 15%;
+            height: 40px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 2px black;
+        }
+        #tres{
+            background-color: rgb(127, 197, 255);
+            width: 60%;
+            height: 40px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 2px black;
+        }
+        #cuatro{
+            background-color: rgb(127, 197, 255);
+            width: 7%;
+            height: 40px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 2px black;
+        }
+        .bootom{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #b-1, #b-9{
+            background-color: rgb(127, 197, 255);
+            width: 15%;
+            height: 40px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 2px black;
+        }
+        #b-2, #b-3, #b-4, #b-5, #b-6, #b-7, #b-8{
+            background-color: black;
+            height: 10px;
+            width: 8%;
+            border-radius: 5px;
+        }
+        #content{
+            width: 100%; 
+            display: flex;
+            margin-top: 30px;
+        }
+        .content-izquierda{
+            display: flex;
+            width: 40%;
+            gap: 20px;
+            flex-direction: column;
+        
+        }
+        .content-derecha{
+            background-color: rgba(16, 14, 141, 0.342);
+            width: 60%;
+            gap: 20px;
+            height: 300px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 2px black;
+        }
+        #arriba{
+            background-color: rgba(16, 14, 141, 0.342);
+            width: 80%;
+            height: 140px;
+            box-shadow: 3px 3px 2px black;
+            border-radius: 10px;
+
+        }
+        #abajo{
+            background-color: rgba(16, 14, 141, 0.342);
+            width: 80%;
+            height: 140px;
+            box-shadow: 3px 3px 2px black;
+            border-radius: 10px;
+        }
+        #contenedor3{ 
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+        
+        }
+        #contenedor3 .tarjeta{
+            background-color: rgba(7, 86, 155, 0.671);
+            width: 13%;
+            height: 150px;
+            border-radius: 10px;
+            box-shadow: 4px 4px 3px black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            padding: 10px;
+        }
+        #contenedor3 .tarjeta .imagen{
+            background-color: darkgray;
+            width: 60%;
+            height: 70px;
+            border-radius: 10px;
+        }
+        #contenedor3 .tarjeta .texto{
+            background-color:  rgba(3, 64, 117, 0.671);
+            width: 80%;
+            height: 20px;
+            border-radius: 10px;
+
+        }
+        #carrusel{
+            background-color: rgba(30, 143, 255, 0.349);
+            width: auto;
+            height: 200px;
+            margin-top: 20px;
+            display: flex;
+            overflow-x:visible;
+            justify-content: space-between;
+            
+        }
+        .numero{
+            background-color: darkgray;
+            width: 20%;
+            height: 10px;
+            border-radius: 10px;
+        }
+        #carrusel .tarjeta{
+            background-color: rgb(42, 42, 233);
+            width: 18%;
+            height: 200px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            padding: 10px; 
+        }
+        #carrusel .tarjeta .imagen{
+            background-color: darkgray;
+            width: 50%;
+            height: 70px;
+            border-radius: 10px;
+        }
+        #carrusel .tarjeta .texto{
+            background-color:  rgba(17, 17, 17, 0.671);
+            width: 80%;
+            height: 15px;
+            border-radius: 10px;
+        }
+        #carrusel .tarjeta .contenido-tarjeta{
+            width: 100%; 
+            display: flex;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        #carrusel .tarjeta .contenido-tarjeta .texto{
+            background-color:  rgba(17, 17, 17, 0.671);
+            width: 60%;
+            height: 15px;
+            border-radius: 10px;
+        }
+        #carrusel .tarjeta .contenido-tarjeta .precio{
+            background-color:  rgba(17, 17, 17, 0.671);
+            width: 20%;
+            height: 30px;
+            border-radius: 10px;
+        } 
+        #contenedor4{
+            width: 100%;
+            display: flex;
+            gap: 40px;
+            margin-top: 70px;
+        } 
+        .izquierda{
+            background-color: rgba(16, 14, 141, 0.342);
+            width: 50%;
+            height: 150px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 2px black;
+        }
+        .derecha{
+            background-color: rgba(16, 14, 141, 0.342);
+            width: 50%;
+            height: 150px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 2px black;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div class="top">
+
+        </div >
+        <div class="medium">
+            <div id="uno">
+
+            </div>
+            <div id="dos">
+
+            </div>
+            <div id="tres">
+
+            </div>
+            <div id="cuatro">
+
+            </div>
+        </div>
+        <div class="bootom">
+            <div id="b-1"></div>
+            <div id="b-2"></div>
+            <div id="b-3"></div>
+            <div id="b-4"></div>
+            <div id="b-5"></div>
+            <div id="b-6"></div>
+            <div id="b-7"></div>
+            <div id="b-8"></div>
+            <div id="b-9"></div>
+            
+
+        </div>
+    </div>
+
+    <div id="content">
+        <div class="content-izquierda">
+            <div id="arriba"></div>
+            <div id="abajo"></div>
+        </div>
+        <div class="content-derecha"></div>
+    </div>
+
+    <div id="contenedor3">
+        <div class="tarjeta">
+            <div class="imagen"></div>
+            <div class="texto"></div>
+        </div>
+        <div class="tarjeta">
+            <div class="imagen"></div>
+            <div class="texto"></div>
+        </div>
+        <div class="tarjeta">
+            <div class="imagen"></div>
+            <div class="texto"></div>
+        </div>
+        <div class="tarjeta">
+            <div class="imagen"></div>
+            <div class="texto"></div>
+        </div>
+        <div class="tarjeta">
+            <div class="imagen"></div>
+            <div class="texto"></div>
+        </div>
+        <div class="tarjeta">
+            <div class="imagen"></div>
+            <div class="texto"></div>
+        </div>
+    </div>
+
+    <div id="carrusel">
+        <div class="tarjeta">
+            <div class="numero"></div>
+            <div class="imagen"></div>
+            <div class="texto"></div>
+            <div class="texto"></div>
+            <div class="contenido-tarjeta">
+                <div class="texto"></div>
+                <div class="precio"></div>
+                </div>
+            </div>
+        <div class="tarjeta">
+            <div class="numero"></div>
+            <div class="imagen"></div>
+            <div class="texto"></div>
+            <div class="texto"></div>
+            <div class="contenido-tarjeta">
+                <div class="texto"></div>
+                <div class="precio"></div>
+            </div>
+        </div>
+        <div class="tarjeta">
+            <div class="numero"></div>
+            <div class="imagen"></div>
+            <div class="texto"></div>
+            <div class="texto"></div>
+            <div class="contenido-tarjeta">
+                <div class="texto"></div>
+                <div class="precio"></div>
+            </div>
+        </div>
+        <div class="tarjeta">
+            <div class="numero"></div>
+            <div class="imagen"></div>
+            <div class="texto"></div>
+            <div class="texto"></div>
+            <div class="contenido-tarjeta">
+                <div class="texto"></div>
+                <div class="precio"></div>
+            </div>
+        </div>
+        <div class="tarjeta">
+            <div class="numero"></div>
+            <div class="imagen"></div>
+            <div class="texto"></div>
+            <div class="texto"></div>
+            <div class="contenido-tarjeta">
+                <div class="texto"></div>
+                <div class="precio"></div>
+            </div>
+        </div>  
+    </div>
+    <div id="contenedor4">
+        <div class="izquierda"></div>
+        <div class="derecha"></div>
+    </div>
+        <div id="carrusel">
+        <div class="tarjeta">
+            <div class="numero"></div>
+            <div class="imagen"></div>
+            <div class="texto"></div>
+            <div class="texto"></div>
+            <div class="contenido-tarjeta">
+                <div class="texto"></div>
+                <div class="precio"></div>
+                </div>
+            </div>
+        <div class="tarjeta">
+            <div class="numero"></div>
+            <div class="imagen"></div>
+            <div class="texto"></div>
+            <div class="texto"></div>
+            <div class="contenido-tarjeta">
+                <div class="texto"></div>
+                <div class="precio"></div>
+            </div>
+        </div>
+        <div class="tarjeta">
+            <div class="numero"></div>
+            <div class="imagen"></div>
+            <div class="texto"></div>
+            <div class="texto"></div>
+            <div class="contenido-tarjeta">
+                <div class="texto"></div>
+                <div class="precio"></div>
+            </div>
+        </div>
+        <div class="tarjeta">
+            <div class="numero"></div>
+            <div class="imagen"></div>
+            <div class="texto"></div>
+            <div class="texto"></div>
+            <div class="contenido-tarjeta">
+                <div class="texto"></div>
+                <div class="precio"></div>
+            </div>
+        </div>
+        <div class="tarjeta">
+            <div class="numero"></div>
+            <div class="imagen"></div>
+            <div class="texto"></div>
+            <div class="texto"></div>
+            <div class="contenido-tarjeta">
+                <div class="texto"></div>
+                <div class="precio"></div>
+            </div>
+        </div>  
+    </div>
+</body>
+</html>
