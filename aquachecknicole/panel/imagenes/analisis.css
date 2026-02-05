@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #f4f6f9;
+}
+.layout {
+    display: flex;
+    height: 100vh;
+}
+.sidebar {
+    width: 560px;
+    background: #ffffff;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+
+.logo img {
+    width: 245px;
+}
+
+.menu a,
+.menu-bottom a {
+    display: block;
+    padding: 30px;
+    margin-bottom: 8px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #000;
+}
+
+.menu a.active {
+    background: linear-gradient(90deg, #2ecc71, #3498db);
+    color: #fff;
+}
+
+.menu-bottom {
+    margin-top: 500px;
+}
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background: linear-gradient(180deg, #2ecc71, #4fa3ff);
+    min-height: 138vh;
+}
+.analysis-header {
+    background: linear-gradient(90deg, #20c933, #41e04f);
+    color: #000;
+    padding: 36px 20px;
+    border-radius: 14px;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.analysis-header h2 {
+    margin: 0;
+}
+.card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+.grafico-parametros {
+    width: 100%;
+    max-height: 760px;   
+    object-fit: contain;
+}
+.analysis-box {
+    background: #e5e5e5;
+    border-radius: 16px;
+    padding: 100px;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.analysis-box textarea {
+    width: 100%;
+    height: 540px;
+    border: none;
+    border-radius: 12px;
+    padding: 10px;
+    resize: none;
+    font-size: 40px;
+}
+
+.analysis-actions {
+    margin-top: 10px;
+}
+
+.btn-file {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 38px 34px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 40px;
+}
+.bottom-actions {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+}
+
+.btn-save {
+    background: #c1c0c0;
+    padding: 12px 30px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    font-size: 54px;
+}
+
+.btn-complete {
+    background: #22c55e;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    font-size: 54px;
+}

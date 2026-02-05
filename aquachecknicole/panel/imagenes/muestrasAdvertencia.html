@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Aqua Check - Muestras</title>
+    <link rel="stylesheet" href="muestrasAdvertencia.css">
+</head>
+<body>
+
+<div class="app">
+    <aside class="menu">
+        <div class="logo">
+            <img src="./image 5.png" alt="Aqua Check">
+            <h3>AQUA CHECK</h3>
+            <span>Químico</span>
+        </div>
+
+        <nav class="menu-items">
+            <button>🏠Panel</button>
+            <button>🗺️Mapa</button>
+            <button>🧪Análisis</button>
+            <button class="active">📄Muestras</button>
+            <button>🔔Notificaciones</button>
+            <button>🤖IA</button>
+        </nav>
+
+        <div class="menu-footer">
+            <button>👤Mi perfil</button>
+            <button>⚙️Configuración</button>
+            <button>🚪Cerrar sesión</button>
+        </div>
+    </aside>
+    <main class="content">
+        <header class="header">
+            <div>
+                <h2>Muestras de agua</h2>
+                <p>Monitorea la calidad del agua en tiempo real</p>
+            </div>
+
+            <input type="text" placeholder="Buscar muestras, ubicaciones">
+        </header>
+        <section class="card">
+            <h3>Muestras de Agua</h3>
+            <p class="sub">Se detectaron niveles altos de cloro en la zona Centro.</p>
+
+            <div class="filters">
+                <input type="text" placeholder="Buscar">
+                <select><option>Todos los estados</option></select>
+                <select><option>Potable</option></select>
+                <select><option>Fecha</option></select>
+            </div>
+
+            <div class="stats">
+                <span class="green">4<br>Potables</span>
+                <span class="orange">3<br>Advertencia</span>
+                <span class="red">2<br>No Potables</span>
+                <span class="blue">8<br>Total</span>
+            </div>
+        </section>
+        <section class="card">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ubicación</th>
+                        <th>Fecha</th>
+                        <th>Reportero</th>
+                        <th>Estado</th>
+                        <th>pH</th>
+                        <th>Cloro</th>
+                        <th>Turbidez</th>
+                        <th>Temp</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Perú, Lima</td>
+                        <td>20/10/2025</td>
+                        <td>Juan Pérez</td>
+                        <td><span class="badge ok">Advertencia</span></td>
+                        <td>8.2</td>
+                        <td>0.8</td>
+                        <td>1.2</td>
+                        <td>26.5</td>
+                        <td><button class="action">Crear análisis</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>Cali, colombia</td>
+                        <td>04/09/2025</td>
+                        <td>Juan Pérez</td>
+                        <td><span class="badge ok">Advertencia</span></td>
+                        <td>7.4</td>
+                        <td>0.9</td>
+                        <td>7</td>
+                        <td>21.8</td>
+                        <td><button class="action">Crear análisis</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>Universidad del Cauca</td>
+                        <td>23/11/2026</td>
+                        <td>Camilo Torres</td>
+                        <td><span class="badge ok">Advertencia</span></td>
+                        <td>7.1</td>
+                        <td>10.5</td>
+                        <td>2</td>
+                        <td>20.5</td>
+                        <td><button class="action">Crear análisis</button></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+</div>
+
+</body>
+</html>

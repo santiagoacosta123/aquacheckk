@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f6f8;
+}
+
+.app {
+    display: flex;
+    min-height: 100vh;
+}
+.menu {
+    width: 640px;
+    background: #fff;
+    padding: 20px;
+    border-right: 3px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    font-size: 44px;
+}
+
+.logo img {
+    width: 180px;
+    margin-bottom: 10px;
+}
+
+.logo h3 {
+    color: #1f5eff;
+}
+
+.menu-items button,
+.menu-footer button {
+    width: 100%;
+    padding: 30px;
+    margin: 8px 0;
+    border-radius: 20px;
+    border: 1px solid #2ecc71;
+    background: transparent;
+    cursor: pointer;
+    text-align: left;
+    font-size: 40px;
+}
+
+.menu-items button.active {
+    background: linear-gradient(to right, #2ecc71, #3498db);
+    color: #fff;
+    border: none;
+}
+
+.menu-footer {
+    margin-top: auto;
+}
+.content {
+    flex: 1;
+    padding: 25px;
+}
+.header {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.header p {
+    color: #666;
+}
+.notifications {
+    background: #fff;
+    padding: 20px;
+    border-radius: 18px;
+    font-size: 40px;
+}
+
+.sub {
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.notification {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.icono {
+    padding: 70px;
+    width: 40px;
+    height: 40px;
+    background: #d7d7d7;
+    border-radius: 50%;
+}
+
+.info {
+    flex: 1;
+}
+
+.info span {
+    display: block;
+    color: #777;
+    font-size: 12px;
+    margin-top: 4px;
+    font-size: 40px;
+}
+
+.action {
+    background: #2ecc71;
+    color: #fff;
+    border: none;
+    padding: 18px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 40px;
+    font-weight: bold;
+}

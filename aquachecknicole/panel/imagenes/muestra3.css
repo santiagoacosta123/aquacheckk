@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: #f6f8fa;
+  font-family: Arial, sans-serif;
+  color: #1a1a1a;
+  min-height: 100vh;
+}
+
+.sample-detail-card {
+  min-height: 100vh;
+  width: 100%;
+  max-width: 100%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 26px 20px;
+  background: #f8f9fa;
+  border-bottom: 1px solid #e8ecef;
+  position: sticky;
+  top: 0;
+}
+
+.check-icon {
+  width: 92px;
+  height: 92px;
+  background: #1acd17;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.card-header h2 {
+  font-size: 50px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.sample-info {
+  flex: 1;
+  padding: 54px 70px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sample-name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.badge {
+  padding: 26px 14px;
+  border-radius: 20px;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.advertencia {
+  background: #1acd17;
+  color: white;
+}
+
+.parameters {
+  margin-bottom: 32px;
+}
+
+.param-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 44px 0;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 42px;
+}
+
+.param-row:last-child {
+  border-bottom: none;
+}
+
+.label {
+  color: #555;
+  font-weight: 400;
+}
+
+.value {
+  font-weight: 600;
+  color: #111;
+}
+
+.reporter {
+  font-size: 42px;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 32px;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.calendar-icon, .user-icon {
+  margin-right: 8px;
+  font-size: 50px;
+}
+
+.view-report-btn {
+  margin-top: auto;
+  width: 100%;
+  padding: 46px;
+  background: linear-gradient(90deg, #1acd17, #3c7304);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 46px;
+  font-weight: 600;
+  cursor: pointer;
+}

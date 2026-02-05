@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>AQUA CHECK - Calidad por Zona</title>
+
+    <link rel="stylesheet" href="tendencias1.css">
+</head>
+<body>
+
+<div class="layout">
+    <aside class="sidebar">
+
+        <div class="logo">
+            <img src="./image 5.png" alt="Aqua Check">
+            <span>AquaCheck<br><small>Químico</small></span>
+        </div>
+
+        <nav class="menu">
+            <a class="active">🏠 Panel</a>
+            <a>🗺️ Mapa</a>
+            <a>🧪 Análisis</a>
+            <a>📄 Muestras</a>
+            <a>🔔 Notificaciones</a>
+            <a>📊 Tendencias</a>
+            <a>🤖 IA</a>
+        </nav>
+
+        <div class="menu-bottom">
+            <a>👤 Mi perfil</a>
+            <a>⚙️ Configuración</a>
+            <a>🚪 Cerrar sesión</a>
+        </div>
+
+    </aside>
+    <main class="main-content">
+        <div class="header">
+            <div>
+                <h2>Calidad del agua por Zona</h2>
+                <p>Consulta el estado actual de la calidad del agua en distintas zonas</p>
+            </div>
+            <span class="bell">🔔</span>
+        </div>
+        <div class="filters">
+            <div>
+                <label>Periodo:</label>
+                <select><option>Marzo</option></select>
+            </div>
+
+            <div>
+                <label>Zona:</label>
+                <select><option>Centro</option></select>
+            </div>
+
+            <div>
+                <label>Muestra:</label>
+                <select><option>pH</option></select>
+            </div>
+
+            <button class="btn-export">⬇ Exportar</button>
+        </div>
+        <div class="grid">
+            <div class="card">
+                <h3>Calidad por Zona</h3>
+                <img src="./Captura de pantalla 2026-01-31 131704.png" class="grafico-img" alt="Gráfico">
+            </div>
+            <div class="card">
+                <img src="./image 18.png" class="mapa-img" alt="Mapa">
+            </div>
+
+            <div class="card">
+                <h3>Análisis General</h3>
+                <p>
+                    El agua en la zona Centro presenta valores dentro del rango aceptable,
+                    manteniendo buena calidad en todos los parámetros analizados.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Centro</h3>
+                <p><strong>Calidad:</strong> 88% (Buena)</p>
+                <p><strong>Promedio pH:</strong> 7.0</p>
+                <p><strong>Turbidez:</strong> 2.8 NTU</p>
+                <p><strong>Temperatura:</strong> 10°C</p>
+                <p><strong>Última muestra:</strong> 10/10/2025</p>
+                <p><strong>Tendencia:</strong> +2.0% mejora</p>
+            </div>
+
+        </div>
+        <div class="zones">
+            <div class="zone-card">Norte<br><p>Calidad: 92% (Buena) Promedio de pH: 7.1 Turbidez: 2.1 NTU Temperatura: 18°C Última muestra: 10/10/2025 Tendencia: +3.5% mejora</p></div>
+            <div class="zone-card">Sur<br><p>Calidad: 74% (Regular) Promedio de pH: 6.8 Turbidez: 4.3 NTU Temperatura: 19°C Última muestra: 10/10/2025 Tendencia: +1.1% estable</p></div>
+            <div class="zone-card">Este<br><p>Calidad: 60% (Regular) Promedio de pH: 6.4 Turbidez: 5.7 NTU Temperatura: 21°C Última muestra: 09/10/2025 Tendencia: -2.3% descenso</p></div>
+            <div class="zone-card">Oeste<br><p>Calidad: 45% (Crítica) Promedio de pH: 5.8 Turbidez: 6.4 NTU Temperatura: 21°C Última muestra: 09/10/2026 Tendencia: -3.2% descenso</p></div>
+        </div>
+
+    </main>
+</div>
+
+</body>
+</html>
+
