@@ -10,14 +10,14 @@ body {
     background: #f4f6f8;
 }
 
-/* CONTENEDOR */
+
 .container {
     display: flex;
     min-height: 100vh;
     animation: fadeIn 0.8s ease;
 }
 
-/* IZQUIERDA – IMAGEN REAL */
+
 .left {
     flex: 1;
     position: relative;
@@ -29,14 +29,14 @@ body {
     animation: bgZoom 20s ease-in-out infinite alternate;
 }
 
-/* OSCURECIDO MUY SUAVE (IMAGEN REAL) */
+
 .overlay {
     position: absolute;
     inset: 0;
     background: rgba(0, 0, 0, 0.12);
 }
 
-/* CONTENIDO */
+
 .content {
     position: relative;
     height: 100%;
@@ -47,7 +47,7 @@ body {
     animation: slideLeft 1s ease;
 }
 
-/* LOGO */
+
 .logo {
     font-size: 22px;
     font-weight: bold;
@@ -59,7 +59,7 @@ body {
     margin-right: 8px;
 }
 
-/* TEXTO */
+
 .left h1 {
     font-size: 42px;
     line-height: 1.2;
@@ -73,7 +73,7 @@ body {
     animation: fadeUp 1.3s ease;
 }
 
-/* STATS */
+
 .stats {
     display: flex;
     gap: 40px;
@@ -85,7 +85,7 @@ body {
     font-size: 28px;
 }
 
-/* DERECHA */
+
 .right {
     width: 420px;
     background: #ffffff;
@@ -108,14 +108,14 @@ body {
     margin-bottom: 30px;
 }
 
-/* LABELS */
+
 label {
     font-size: 14px;
     color: #34495e;
     margin-bottom: 6px;
 }
 
-/* INPUTS */
+
 input {
     padding: 12px;
     border-radius: 8px;
@@ -131,7 +131,7 @@ input:focus {
     transform: translateY(-1px);
 }
 
-/* OPCIONES */
+
 .options {
     display: flex;
     justify-content: space-between;
@@ -144,7 +144,7 @@ input:focus {
     text-decoration: none;
 }
 
-/* BOTÓN */
+
 .btn {
     padding: 14px;
     border-radius: 10px;
@@ -161,7 +161,6 @@ input:focus {
     box-shadow: 0 10px 22px rgba(0,0,0,0.25);
 }
 
-/* DIVIDER */
 .divider {
     text-align: center;
     margin: 25px 0;
@@ -169,7 +168,7 @@ input:focus {
     color: #95a5a6;
 }
 
-/* SOCIAL */
+
 .social {
     display: flex;
     gap: 15px;
@@ -210,7 +209,7 @@ input:focus {
     text-decoration: none;
 }
 
-/* RESPONSIVE */
+
 @media (max-width: 900px) {
     .left {
         display: none;
@@ -220,7 +219,6 @@ input:focus {
     }
 }
 
-/* ANIMACIONES */
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
